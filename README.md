@@ -1,5 +1,5 @@
 # phpwkhtmltox
-PHP extension of libwkhtmltox base on a awesome [wkhtmltox](wkhtmltopdf.org) project
+PHP extension of libwkhtmltox base on a awesome [wkhtmltox](http://wkhtmltopdf.org) project
 
 - PHP wrapper of libwkhtmltox
 - Thanks to mreiferson, this project fork from his [php-wkhtmltox](https://github.com/mreiferson/php-wkhtmltox), although it didn't maintain any more
