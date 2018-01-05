@@ -6,13 +6,13 @@ PHP extension of libwkhtmltox base on a awesome [wkhtmltox](wkhtmltopdf.org) pro
 
 Follow this link `https://wkhtmltopdf.org/libwkhtmltox/pagesettings.html` to see more parameters, or you can use wkhtmltopdf/wkhtmltoimage -h to get some useful tips
 
-#Requirements
+# Requirements
 
 - Download the lastest stable version wkhtmltox from http://wkhtmltopdf.org
 - Copy libwkhtmltox.* to somewhere in your LD path(/usr/local/lib)
 - Copy src/include/wkhtmltox to somewhere on your include path(/usr/local/include)
 
-# installation
+# Installation
 
 ```
 phpize
