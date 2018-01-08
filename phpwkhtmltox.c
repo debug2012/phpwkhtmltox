@@ -13,6 +13,7 @@ ZEND_DECLARE_MODULE_GLOBALS(phpwkhtmltox)
 
 static zend_function_entry phpwkhtmltox_functions[] = {
         PHP_FE(wkhtmltox_convert, NULL)
+        PHP_FE(wkhtmltox_test_memory, NULL) // just for test
         PHP_FE_END
 };
 
@@ -75,7 +76,7 @@ PHP_FUNCTION (wkhtmltox_convert) {
     int ret;
 
     // receives the format parameter
-    char *format;
+    char *format="pdf"; // fix a segmentation fault bug on mac os
     int format_len;
 
     // receives the global and object parameters
@@ -156,6 +157,14 @@ void wkhtmltox_set_params(void *settings, fp set_function, zval *params) {
                         break;
                 }
             }ZEND_HASH_FOREACH_END();
+}
+
+PHP_FUNCTION (wkhtmltox_test_memory) {
+    char *c = "hello";
+    char *s = "string not used";
+
+    printf("%s\n", c);
+    RETURN_NULL()
 }
 
 #ifdef COMPILE_DL_PHPWKHTMLTOX

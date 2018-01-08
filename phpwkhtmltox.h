@@ -25,6 +25,8 @@ ZEND_END_MODULE_GLOBALS(phpwkhtmltox)
 
 
 PHP_FUNCTION (wkhtmltox_convert);
+// just for test
+PHP_FUNCTION(wkhtmltox_test_memory);
 
 typedef int (*fp)(void *settings, const char *name, const char *value);
 
