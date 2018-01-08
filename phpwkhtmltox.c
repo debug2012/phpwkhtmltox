@@ -76,7 +76,7 @@ PHP_FUNCTION (wkhtmltox_convert) {
     int ret;
 
     // receives the format parameter
-    char *format="pdf"; // fix a segmentation fault bug on mac os
+    char *format="pdf"; // fix a segmentation fault bug on macOS
     int format_len;
 
     // receives the global and object parameters
