@@ -26,3 +26,29 @@ edit your php.ini
 extension=phpwkhtmltox.so
 ```
 
+# Usage
+```
+$ret = wkhtmltox_convert('pdf',
+        ['out' => '/tmp/baidu.pdf', 'imageQuality' => '100','pageSize'=>'A4','test'=>true], // global settings
+        [
+            //['page' => 'http://www.sina.com/','jsdelay'=>100],
+            ['page' => 'http://www.baidu.com/'],
+        ]); // object settings
+var_dump($ret);
+```
+```
+$ret = wkhtmltox_pdf(['out' => '/tmp/baidu1.pdf', 'imageQuality' => '100','pageSize'=>'A4','test'=>true], // global settings
+        [
+            //['page' => 'http://www.sina.com/','jsdelay'=>100],
+            ['page' => 'http://www.baidu.com/'],
+        ]); // object settings
+var_dump($ret);
+```
+```
+$t = microtime(true);
+$ret = wkhtmltox_convert('image',
+    ['out' => '/tmp/baidu.jpg', 'in' => 'http://www.baidu.com/','imageQuality'=>100]); // global settings
+
+var_dump($ret);
+```
+see test_pdf.php test_image.php
