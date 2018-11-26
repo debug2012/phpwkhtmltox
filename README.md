@@ -10,7 +10,7 @@ Follow this link `https://wkhtmltopdf.org/libwkhtmltox/pagesettings.html` to see
 - php7.x
 - Download the lastest stable version wkhtmltox from http://wkhtmltopdf.org
 - Copy libwkhtmltox.* to somewhere in your LD path(/usr/local/lib)
-- Copy src/include/wkhtmltox to somewhere on your include path(/usr/local/include)
+- Copy src/include/wkhtmltox to somewhere in your include path(/usr/local/include)
 
 # Installation
 
